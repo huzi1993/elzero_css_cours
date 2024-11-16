@@ -1,0 +1,13 @@
+/* selector {
+  property: Value;
+  propertyTwo: Value;
+. => class
+# => id
+
+} */
+
+.my_p {
+  color: red;
+  background-color: aquamarine;
+  font-size: 40px;
+}
