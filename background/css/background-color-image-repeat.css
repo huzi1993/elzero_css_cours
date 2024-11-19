@@ -1,0 +1,10 @@
+div {
+  background-color: red; /* color name */
+  background-color: rgb(255, 255, 255); /* red, green, blue, alpha channel */
+  background-color: #00ff; /* color Hex code */
+  background-image: url("../media/software-programming.jpg");
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: repeat; */
+  background-repeat: no-repeat;
+}
