@@ -5,5 +5,5 @@ div {
   min-width: 400px;
   max-width: 400px;
   max-height: 100px; */
-  fit-
+  width: fit-content;
 }
