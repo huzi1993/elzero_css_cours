@@ -1,0 +1,7 @@
+div {
+  text-align: center;
+  direction: rtl;
+}
+div img {
+  vertical-align: middle;
+}
