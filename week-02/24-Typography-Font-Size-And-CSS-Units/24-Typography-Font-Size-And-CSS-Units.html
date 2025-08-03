@@ -4,30 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography – Font Family</title>
+    <title>Typography Font Size And CSS Units</title>
+
+
 
     <style>
-        .with-ser,
-        .san-ser {
-            background-color: #ddd;
-            padding: 10px;
+        /*
+    CSS-Units
+    
+    px
+    - em => Time
+    - rem => Root Time
+    -percentage
+    - vw => View Port Width
+    
+    Read
+
+    ---vmin
+    vh
+
+    1em 16px This Is Wrong
+
+    Default Font Size For Web Page Is 16px
+        */
+
+        body {
+            /* font-size: 40px; */
         }
 
-        .with-ser {
-            font-family: 'Times New Roman', Times, serif;
-
+        div {
+            font-size: vw;
         }
 
-        .san-ser {
-            font-family: Arial, Helvetica, sans-serif;
-
+        div span {
+            font-size: 2rem;
         }
     </style>
 </head>
 
 <body>
-    <div class="with-ser">Welcome to Elzero Web School F</div>
-    <div class="san-ser">Welcome to Elzero Web School F</div>
+    <div>Welcome to Elzero Web School <span>Test</span></div>
 </body>
 
 </html>
