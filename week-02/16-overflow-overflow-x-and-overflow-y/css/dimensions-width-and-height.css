@@ -1,9 +1,0 @@
-div {
-  background-color: aquamarine;
-  width: 150px;
-  height: 150px;
-  margin: 20px auto;
-  border-radius: 6px;
-  /* overflow: auto; */
-  overflow-y: hidden;
-}

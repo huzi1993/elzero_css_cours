@@ -2,9 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/groupingg-multiple-selectors.css" />
     <title>Grouping Multiple Selectors</title>
   </head>
+  <style>
+    .one {
+      border-bottom: 2px solid red;
+      color: red;
+    }
+    .two {
+      border-bottom: 2px solid green;
+      color: green;
+    }
+    .three {
+      border-bottom: 2px solid blue;
+      color: blue;
+    }
+    .four {
+      border-bottom: 2px solid black;
+      color: black;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    p {
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #eee;
+    }
+  </style>
   <body>
     <div class="one">One</div>
     <div class="two">Two</div>
