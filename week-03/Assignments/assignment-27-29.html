@@ -40,6 +40,26 @@
       .clear {
         clear: both;
       }
+
+      .assign-2 {
+        margin: 20px auto;
+        width: 300px;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 20px;
+        background-color: #b3b3b3; /* Get The Background From Image */
+        color: black;
+      }
+
+      .one {
+        background-color: lab(
+          72.94% 0 -0.01 / 0.456
+        ); /* Get The Background From Image */
+      }
+
+      .two {
+        opacity: 0.4;
+      }
     </style>
   </head>
   <body>
@@ -60,5 +80,12 @@
       <div class="assig-1-child one-quarter">1/4</div>
       <div class="clear"></div>
     </div>
+    <br />
+    <hr />
+    <h2>Assign 2:</h2>
+    <br />
+    <div class="assign-2 normal">Normal</div>
+    <div class="assign-2 one">One</div>
+    <div class="assign-2 two">Two</div>
   </body>
 </html>
