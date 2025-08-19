@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment 3</title>
+    <style>
+      ul.main {
+        width: 400px;
+        background-color: #eee;
+        padding: 15px;
+        list-style-type: none;
+        margin: 20px auto;
+      }
+
+      ul.main > li {
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .html-list,
+      .css-list,
+      .js {
+        list-style-position: outside;
+        margin-top: 8px;
+      }
+
+      .html-list li,
+      .css-list li,
+      .js li {
+        background-color: #fff;
+        margin: 8px 0;
+        padding: 8px;
+      }
+
+      .html-list {
+        list-style-type: decimal;
+      }
+      .css-list {
+        list-style-type: upper-roman;
+      }
+      .js li {
+        list-style-type: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="main">
+      <li>
+        HTML
+        <ol class="html-list" start="10">
+          <li>Slim</li>
+          <li>Pugjs</li>
+          <li>HAML</li>
+        </ol>
+      </li>
+      <li>
+        CSS
+        <ol class="css-list" start="10">
+          <li>SASS</li>
+          <li>LESS</li>
+          <li>PostCSS</li>
+        </ol>
+      </li>
+      <li>
+        JavaScript
+        <ul class="js">
+          <li>Vuejs</li>
+          <li>Sveltejs</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
