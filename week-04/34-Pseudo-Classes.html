@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes</title>
+    <style>
+      .one {
+        background-color: red;
+        color: white;
+      }
+
+      .two {
+        background-color: #eee;
+        width: 100px;
+        height: 100px;
+      }
+
+      a {
+        color: green;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: blueviolet;
+      }
+
+      p {
+        background-color: #eee;
+        width: 100px;
+        height: 100px;
+      }
+
+      /* .ch:checked + label {
+              color: red;
+
+            } */
+      .ch:checked {
+        display: none;
+      }
+      a:visited {
+        color: blue;
+      }
+      div:empty {
+        border: 3px, salmon solid;
+      }
+
+      /* :empty {
+        border: 3px, salmon solid;
+      } */
+
+      .in {
+        border: 2px solid black;
+      }
+
+      .in:focus {
+        border-color: yellow;
+        /* outline: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">Normal Element</div>
+    <hr />
+    <div class="two"></div>
+    <p></p>
+    <hr />
+    <a href="https://google.com">Link 1</a>
+    <a href="https://twitter.com">Link 2</a>
+    <a href="https://youtube.com">Link 3</a>
+    <a href="#">Link 4</a>
+    <hr />
+    <form action="">
+      <div>
+        <input class="in" type="text" />
+      </div>
+      <div>
+        <input class="ch" type="checkbox" />
+        <label for="">Testing Check</label>
+      </div>
+    </form>
+  </body>
+</html>
