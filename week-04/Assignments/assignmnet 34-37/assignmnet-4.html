@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <style>
+      p {
+        background-color: #eee;
+        padding: 10px;
+        width: 350px;
+        position: relative;
+        counter-increment: conter;
+        margin: 15px auto;
+        font-weight: bold;
+      }
+
+      p::before {
+        content: counter(conter);
+        position: absolute;
+        text-align: center;
+        background-color: #e91e63;
+        height: 100%;
+        width: 40px;
+        left: -40px;
+        margin-top: -10px;
+        color: white;
+        display: flex;
+        align-items: center; /* عمودي */
+        justify-content: center; /* أفقي */
+      }
+
+      p::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        right: 0px;
+        top: 0;
+        background-color: #e91e63;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+    <p>This Is Very Very Long Product Title</p>
+  </body>
+</html>
