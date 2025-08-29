@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignmnet 3</title>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        width: 550px;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        /* Added to contain the floated children */
+        overflow: hidden;
+      }
+
+      /* The vertical line */
+      .parent::before {
+        content: "";
+        position: absolute;
+        background-color: #03a9f4;
+        width: 2px;
+        /* Matched height to child div height for alignment */
+        height: 320px;
+        top: 20px;
+        /* FIX: Removed the invalid "px" unit */
+        left: 50%;
+        /* FIX: Correct margin to center a 5px element */
+        margin-left: -5px;
+      }
+
+      /* The "Or" circle */
+      .parent::after {
+        content: "Or";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        /* Positioned exactly in the vertical center */
+        top: 50%;
+        left: 50%;
+        /* Use transform for perfect centering regardless of size */
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: #03a9f4;
+        border-radius: 50%;
+        /* line-height equal to height centers the text */
+        line-height: 30px;
+        text-align: center;
+        margin-left: -4px;
+      }
+
+      h4 {
+        background-color: #03a9f4;
+        color: white;
+        border-radius: 3px;
+        height: 30px;
+        /* IMPROVEMENT: Set line-height equal to height for better centering */
+        line-height: 30px;
+      }
+
+      p {
+        background-color: #dddddd;
+        border-radius: 50%;
+        width: 190px;
+        height: 190px;
+        /* IMPROVEMENT: Set line-height equal to height for better centering */
+        line-height: 190px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* Added to center the circle within its parent div */
+        margin: 0 auto;
+      }
+
+      .parent div {
+        float: left;
+        margin: 20px;
+        background-color: #eee;
+        width: 230px;
+        height: 320px;
+        padding: 20px;
+        border-radius: 3px;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="basic">
+        <h4>Basic</h4>
+        <p>Free</p>
+      </div>
+      <div class="pro">
+        <h4>Pro</h4>
+        <p>$30</p>
+      </div>
+    </div>
+  </body>
+</html>

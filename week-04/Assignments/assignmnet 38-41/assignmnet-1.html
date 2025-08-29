@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignmnet 1</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        width: 150px;
+        height: 150px;
+        background-color: #eee;
+        display: inline-block;
+        margin: 10px 10px;
+        border-radius: 50%;
+        counter-increment: counter-1;
+        position: relative;
+        border: solid;
+        box-shadow: -6px -6px 0 0 #e91e63, 6px 6px 0 0 #2196f3;
+      }
+
+      body div::before {
+        position: absolute;
+        content: counter(counter-1);
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        width: 30px;
+        height: 30px;
+        line-height: 30px; /* يخلي الرقم في النص عمودياً */
+        text-align: center; /* يخلي الرقم في النص أفقياً */
+        border-radius: 50%;
+        left: 50%;
+        top: -10px;
+        margin-left: -15px;
+      }
+
+      body div::after {
+        position: absolute;
+        content: "Element";
+        font-size: 1.6rem;
+        top: 50%;
+        margin-top: -15px;
+        left: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
