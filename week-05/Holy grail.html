@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Grail</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+        justify-content: space-between;
+      }
+
+      .menu,
+      .ads {
+        padding: 10px;
+        display: flex;
+        background-color: antiquewhite;
+        justify-content: center;
+        flex-grow: 1;
+      }
+      .content {
+        padding: 10px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        flex-grow: 5;
+        align-items: center;
+      }
+      .header,
+      .footer {
+        padding: 10px;
+
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">Header</header>
+    <div class="container">
+      <nav class="menu">Menu</nav>
+      <main class="content">Content</main>
+      <aside class="ads">Ads</aside>
+    </div>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
