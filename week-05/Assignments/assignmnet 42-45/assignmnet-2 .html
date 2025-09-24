@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignmnet 2</title>
+    <style>
+      div {
+        width: 400px !important;
+        margin: 50px auto !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        color: transparent !important;
+        position: relative !important;
+        background-color: #dededc !important;
+        border-color: transparent !important;
+      }
+
+      div::after {
+        content: "Elzero";
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: red;
+        color: white;
+        padding: 20px;
+        border: 1px solid blue;
+        font-size: 80px;
+      "
+    >
+      Hello Div
+    </div>
+  </body>
+</html>
