@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 6</title>
+    <style>
+      :root {
+        --mainBackColor: #eeeeee;
+        --itemBGColor: #dddddd;
+        --mainPadding: 10px;
+        --mainMargin: 0px 10px;
+      }
+      .page {
+        background-color: var(--mainBackColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+
+      .header {
+        display: flex;
+        background-color: var(--itemBGColor);
+        margin: var(--mainMargin);
+        margin-top: 10px;
+        padding: var(--mainPadding);
+      }
+
+      .logo {
+        display: flex;
+        margin: var(--mainMargin);
+        flex-grow: 1;
+      }
+
+      .links {
+        flex-wrap: wrap;
+        display: flex;
+        list-style: none;
+        margin: var(--mainMargin);
+        justify-content: flex-end;
+        flex-grow: 9;
+      }
+
+      li {
+        padding: 0px 5px;
+      }
+
+      .main-area {
+        display: flex;
+        display: flex;
+        flex-grow: 1;
+        padding: var(--mainPadding);
+      }
+
+      .content {
+        background-color: var(--itemBGColor);
+        padding: var(--mainPadding);
+        flex-grow: 3;
+        margin-right: 10px;
+      }
+
+      .sidebar {
+        background-color: var(--itemBGColor);
+        padding: var(--mainPadding);
+        flex-grow: 1;
+      }
+
+      .footer {
+        display: flex;
+        background-color: var(--itemBGColor);
+        justify-content: space-between;
+        margin: var(--mainMargin);
+        padding: var(--mainPadding);
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="logo">Logo</div>
+        <ul class="links">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="main-area">
+        <div class="content">Content</div>
+        <div class="sidebar">Sidebar</div>
+      </div>
+      <div class="footer">
+        <div class="copyright">Copyright 2021</div>
+        <div class="design">Designed By Elzero</div>
+      </div>
+    </div>
+  </body>
+</html>
