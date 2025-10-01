@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(4fr);
+        grid-template-rows: repeat(4fr);
+      }
+
+      .grid div {
+        text-align: justify;
+        padding: 10px;
+        border-bottom: red solid;
+        position: relative;
+      }
+
+      .grid div::after {
+        position: absolute;
+        content: '"';
+        color: #ff5722;
+        bottom: -5px;
+        right: 10px;
+        line-height: 1;
+        opacity: 0.5;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        font-style: italic;
+      }
+
+      .person1 {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+
+      .person2 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+
+      .person3 {
+        grid-area: 1 / 4 / 4 / 4;
+      }
+
+      .person4 {
+        grid-area: 2 / 1 / 4 / 2;
+      }
+
+      .person5 {
+        grid-area: 2 / 2 / 2 / 4;
+      }
+
+      .person6 {
+        grid-area: 3 / 2 / 3 / 4;
+      }
+
+      .person7 {
+        grid-area: 4 / 1 / 5 / 2;
+      }
+
+      .person8 {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+      .person9 {
+        grid-area: 4 / 3 / 5 / 4;
+      }
+
+      .person10 {
+        grid-area: 4 / 4 / 5 / 5;
+      }
+
+      .person3,
+      .person5,
+      .person8 {
+        background-color: black;
+        color: white;
+      }
+
+      .person1,
+      .person2,
+      .person4,
+      .person6,
+      .person7,
+      .person9,
+      .person10 {
+        background-color: #ffffff;
+      }
+
+      h3 {
+        color: #897f7f;
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="person1">
+        <h2>Osama Muhammed</h2>
+        <h3>Full-Stack Developer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          hic asperiores cupiditate suscipit dolorum, in impedit ab rerum
+          ratione alias labore, eius sit ipsa quae ad molestiae non vel beatae.
+        </p>
+      </div>
+
+      <div class="person2">
+        <h2>Ahmed Sayed</h2>
+        <h3>iOS Developer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          hic asperiores cupiditate suscipit dolorum, in impedit ab rerum
+          ratione alias labore, eius sit ipsa quae ad molestiae non vel beatae.
+        </p>
+      </div>
+
+      <div class="person3">
+        <h2>Shady Nebil</h2>
+        <h3>Android Developer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, itaque
+          deserunt. Velit libero doloribus impedit quidem veniam quo cum eos
+          suscipit accusamus, architecto sequi voluptatibus corrupti molestias
+          explicabo veritatis sed!
+        </p>
+      </div>
+
+      <div class="person4">
+        <h2>Huda Ali</h2>
+        <h3>UI/UX Designer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          suscipit maxime magnam repellendus nesciunt illum ducimus, maiores
+          fuga beatae necessitatibus assumenda quaerat praesentium non omnis hic
+          impedit deleniti ex architecto!
+        </p>
+      </div>
+
+      <div class="person5">
+        <h2>Khaled Ibrahim</h2>
+        <h3>Project Manager</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          id placeat maxime, aspernatur neque magnam eius omnis deleniti
+          perferendis corporis quam numquam nisi provident recusandae
+          distinctio? Ut quasi quam ex!
+        </p>
+      </div>
+
+      <div class="person6">
+        <h2>Sara Hassan</h2>
+        <h3>Data Scientist</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          aliquam similique dolorem repudiandae facere optio alias, autem
+          tempore delectus iusto, temporibus dignissimos modi numquam at
+          suscipit fuga aut voluptas dolorum?
+        </p>
+      </div>
+
+      <div class="person7">
+        <h2>Mohamed Farouk</h2>
+        <h3>DevOps Engineer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi cumque
+          quibusdam dicta quidem accusamus dignissimos ea reprehenderit numquam
+          fuga earum, quisquam
+        </p>
+      </div>
+
+      <div class="person8">
+        <h2>Laila Samir</h2>
+        <h3>Cybersecurity Specialist</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          doloremque soluta reiciendis quas mollitia earum dolores aut fugiat
+          alias. Quaerat delectus volup
+        </p>
+      </div>
+
+      <div class="person9">
+        <h2>Omar Adel</h2>
+        <h3>Frontend Developer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          modi quam consequatur reprehenderit porro rem officia nihil, iusto,
+          eveniet laudantium,
+        </p>
+      </div>
+
+      <div class="person10">
+        <h2>Yasmin Fathy</h2>
+        <h3>Backend Developer</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, unde!
+          Incidunt quo accusamus,
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
