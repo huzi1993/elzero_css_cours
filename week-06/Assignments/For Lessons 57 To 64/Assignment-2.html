@@ -5,36 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
     <style>
-      .grid {
-        background-color: #ddd;
-        padding: 20px;
-        width: 800px;
-        height: 400px;
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .layout {
+        height: 100vh;
         display: grid;
-        gap: 15px;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 50px 1fr;
-        text-align: center;
+        grid-template-rows: 50px 1fr auto;
+        grid-template-columns: 3fr 1fr;
+        color: white;
       }
 
-      .grid div {
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        color: white;
-        font-weight: bold;
+      header {
+        background-color: #03a9f4;
+        padding: 10px;
+        grid-area: 1 / 1 / 1 / 3;
+      }
+
+      section {
+        background-color: #ff5722;
+        padding: 10px;
+        grid-area: 2 / 1 / 2 / 2;
+      }
+
+      aside {
         background-color: #607d8b;
+        padding: 10px;
+        grid-area: 2 / 2 / 2 / 3;
+      }
+
+      footer {
+        background-color: #009688;
+        padding: 10px;
+        grid-area: 3 / 1 / 3 / 3;
       }
     </style>
   </head>
   <body>
-    <div class="grid">
-      <div style="grid-area: 1 / 1 / 2 / 2">Element 1</div>
-      <div style="grid-area: 1 / 2 / 2 / 3">Element 2</div>
-      <div style="grid-area: 1 / 3 / 2 / 4">Element 3</div>
-      <div style="grid-area: 2 / 1 / 3 / 2">Element 4</div>
-      <div style="grid-area: 2 / 2 / 3 / 3">Element 5</div>
-      <div style="grid-area: 2 / 3 / 3 / 4">Element 6</div>
+    <div class="layout">
+      <header>Heder</header>
+      <section>Section</section>
+      <aside>Aside</aside>
+      <footer>Footer</footer>
     </div>
   </body>
 </html>
