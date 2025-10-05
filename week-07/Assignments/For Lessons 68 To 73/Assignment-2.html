@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 1</title>
+    <title>Assignment 2</title>
     <style>
       :root {
-        --mainColor: #ff5722;
+        --mainColor: #009688;
         --mainBackgroundColur: white;
       }
       body {
@@ -19,7 +19,7 @@
       h1 {
         color: var(--mainBackgroundColur);
         background-color: var(--mainColor);
-        width: 150px;
+        width: 100px;
         text-align: center;
         position: relative;
         padding: 20px;
@@ -29,22 +29,23 @@
       h1::before {
         content: "";
         position: absolute;
-        width: 100%;
+        width: 15%;
         height: 100%;
         background-color: var(--mainColor);
         z-index: -1;
       }
       h1::before {
         top: 0;
-        left: 0;
+        left: -12%;
         transform: translate(-50%, -50%);
-        transform: skew(10deg, 12deg);
+        width: 20%;
+        transform: skew(15deg);
       }
       h1::after {
         top: 0;
-        left: 0%;
+        left: -30%;
         transform: translate(-50%, -50%);
-        transform: skew(-10deg, -12deg);
+        transform: skew(15deg);
       }
     </style>
   </head>
