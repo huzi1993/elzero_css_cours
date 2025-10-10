@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <style>
+      :root {
+        --mainBackgroundColur: #607d8b;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      div {
+        background-color: var(--mainBackgroundColur);
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+        border-bottom: solid 5px;
+      }
+
+      div::before {
+        content: "Elzero";
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+      }
+      div::after {
+        content: "";
+        background-color: black;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        top: -84px;
+        left: 35px;
+        transform: rotate(45deg);
+        border-right: solid white 5px;
+        border-bottom: solid white 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

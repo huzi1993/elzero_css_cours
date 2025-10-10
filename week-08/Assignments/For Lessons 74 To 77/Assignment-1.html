@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #eee;
+      }
+
+      div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        border: solid 5px #e91e63;
+        border-top-color: transparent;
+        animation: mymove 2s infinite;
+        animation-timing-function: linear;
+      }
+
+      div::before,
+      div::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      div::before {
+        transform: translate(-50%, -50%) rotate(-6deg);
+        width: 140%;
+        height: 140%;
+        border-radius: 50%;
+        border: solid 5px #03a9f4;
+        border-bottom-color: transparent;
+      }
+
+      div::after {
+        transform: translate(-50%, -50%) rotate(-6deg);
+        width: 180%;
+        height: 180%;
+        border-radius: 50%;
+        border: solid 5px #f99d00;
+        border-left-color: transparent;
+      }
+
+      @keyframes mymove {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      div:hover {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
