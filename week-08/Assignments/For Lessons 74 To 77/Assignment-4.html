@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+      }
+
+      .container {
+        display: flex;
+        gap: 35px;
+      }
+
+      .segment {
+        display: grid;
+        grid-template-columns: repeat(3, 35px);
+        grid-template-rows: repeat(5, 35px);
+        gap: 5px;
+      }
+
+      .segment div {
+        background-color: #4b4646;
+      }
+
+      .e .top {
+        grid-area: 1 / 1 / 2 / 4;
+      }
+
+      .e .middle {
+        grid-area: 3 / 1 / 4 / 4;
+      }
+
+      .e .bottom {
+        grid-area: 5 / 1 / 6 / 4;
+      }
+
+      .e .vertical {
+        grid-area: 1 / 1 / 6 / 2;
+      }
+
+      .l .vertical {
+        grid-area: 1 / 1 / 6 / 2;
+      }
+
+      .l .horizontal {
+        grid-area: 5 / 1 / 6 / 4;
+      }
+
+      .l::before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: blue;
+        bottom: 5px;
+        right: 5px;
+        opacity: 0;
+        animation: lMove 5s linear 5s infinite;
+      }
+      .e::before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: blue;
+        top: 5px;
+        left: 85px;
+        animation: moveAround 5s infinite linear;
+      }
+
+      .l,
+      .e {
+        position: relative;
+      }
+
+      @keyframes moveAround {
+        0% {
+          top: 5px;
+          left: 85px;
+        }
+        11% {
+          top: 5px;
+          left: 5px;
+        }
+        22% {
+          top: 85px;
+          left: 5px;
+        }
+        33% {
+          top: 85px;
+          left: 85px;
+        }
+
+        44% {
+          top: 85px;
+          left: 5px;
+        }
+
+        55% {
+          top: 165px;
+          left: 5px;
+        }
+        66% {
+          top: 165px;
+          left: 85px;
+        }
+        77% {
+          top: 165px;
+          left: 5px;
+        }
+        88% {
+          top: 5px;
+          left: 5px;
+        }
+        100% {
+          top: 5px;
+          left: 85px;
+        }
+      }
+
+      @keyframes lMove {
+        10% {
+          opacity: 100%;
+          top: 165px;
+          left: 85px;
+        }
+
+        35% {
+          opacity: 100%;
+          top: 165px;
+          left: 5px;
+        }
+
+        90% {
+          opacity: 100%;
+          top: 5px;
+          left: 5px;
+        }
+
+        100% {
+          opacity: 0%;
+          top: 5px;
+          left: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- حرف E -->
+      <div class="segment e">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+        <div class="vertical"></div>
+      </div>
+
+      <!-- حرف L -->
+      <div class="segment l">
+        <div class="horizontal"></div>
+        <div class="vertical"></div>
+      </div>
+    </div>
+  </body>
+</html>
