@@ -5,51 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
     <style>
-      :root {
-        --mainColor: #009688;
-        --mainBackgroundColur: white;
-      }
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-
-      h1 {
-        color: var(--mainBackgroundColur);
-        background-color: var(--mainColor);
-        width: 100px;
-        text-align: center;
-        position: relative;
-        padding: 20px;
-      }
-
-      h1::after,
-      h1::before {
-        content: "";
-        position: absolute;
-        width: 15%;
-        height: 100%;
-        background-color: var(--mainColor);
-        z-index: -1;
-      }
-      h1::before {
-        top: 0;
-        left: -12%;
-        transform: translate(-50%, -50%);
-        width: 20%;
-        transform: skew(15deg);
-      }
-      h1::after {
-        top: 0;
-        left: -30%;
-        transform: translate(-50%, -50%);
-        transform: skew(15deg);
+      :first-of-type.parent :last-child {
+        color: red;
       }
     </style>
   </head>
   <body>
-    <h1>Elzero</h1>
+    <div class="parent">
+      <div class="child">Testing</div>
+      <div class="child">Elzero</div>
+    </div>
+    <div class="parent">
+      <div>
+        <div class="child">Testing</div>
+      </div>
+    </div>
+    <div class="child">Testing</div>
   </body>
 </html>
